@@ -1,0 +1,17 @@
+.input-group {
+    max-width: 50%;
+    margin: 0 auto !important;
+}
+::placeholder{
+  color: #D4D3D9;
+}
+.input-group input{
+  background-color: #262540;
+  outline: 0 none;
+  border: transparent;
+}
+.form-control:focus {
+    box-shadow: none !important;
+    border-color: transparent !important;
+    outline: 0 none;
+}

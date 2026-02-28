@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "wheather-app": {
+    "weather-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -25,7 +25,11 @@
               }
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
           },
           "configurations": {
@@ -56,10 +60,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "wheather-app:build:production"
+              "buildTarget": "weather-app:build:production"
             },
             "development": {
-              "buildTarget": "wheather-app:build:development"
+              "buildTarget": "weather-app:build:development"
             }
           },
           "defaultConfiguration": "development"
