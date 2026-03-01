@@ -24,14 +24,14 @@ export class Weather {
         this.weatherInfo.getForecast(this.search).subscribe({
         next:(data)=>{
           this.forceData=data;
+          this.search = '';
           this.cdr.detectChanges();
-          console.log(this.forceData);
         }
         })
         this.cdr.detectChanges();
-        console.log(this.weatherData);
     },error:(err)=>{
       alert(`City Not Found`)
+          this.search = '';
     }
     })
 
